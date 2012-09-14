@@ -24,7 +24,3 @@ module BundleInfo
     end
   end
 end
-
-
-
-
