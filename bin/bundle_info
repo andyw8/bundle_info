@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-#$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 
-require_relative '../lib/bundle_info'
+require 'bundle_info'
 
 BundleInfo::CommandLine.invoke(ARGV)

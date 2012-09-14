@@ -1,4 +1,4 @@
-require_relative "bundle_info/version"
+require "bundle_info/version"
 require 'gemnasium/parser'
 require 'gems'
 require 'active_support/core_ext/string'
