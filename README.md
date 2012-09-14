@@ -1,4 +1,4 @@
-# bundler_info
+# bundle_info
 
 When exploring an existing Ruby project, the Gemfile or gemspec can be a good place to start. Sometimes there's a few gems you don't recognise. Rather than having to Google each one, bundle_info will show a summary of all the gems.
 
