@@ -1,6 +1,6 @@
 # bundle_info
 
-When exploring an existing Ruby project, the Gemfile or gemspec can be a good place to start. Sometimes there's a few gems you don't recognise. **bundle_info** shows a summary of each one, rather than having to look up each gem individually.
+When exploring an existing Ruby project, the `Gemfile` or `.gemspec` can be a good place to start. Sometimes there's a few gems you don't recognise. Rather than having to Google for each one individually, just run `bundle_info` to show a short summary of them all.
 
 Works with `Gemfile` or `.gemspec`
 
