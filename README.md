@@ -13,6 +13,12 @@ Works with `Gemfile` or `.gemspec`
 	$ cd some_project
 	$ bundle_info
 
+    webby: *Webby* is a fantastic little website management system. It would be called a...
+    coderay: Fast and easy syntax highlighting for selected languages, written in Ruby. Co...
+    RedCloth: Textile parser for Ruby.
+    configuration: description: configuration kicks the ass
+    rdiscount: Fast Implementation of Gruber's Markdown in C
+
 ## Contributing
 
 1. Fork it
