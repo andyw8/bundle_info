@@ -2,6 +2,8 @@
 
 When exploring an existing Ruby project, the Gemfile or gemspec can be a good place to start. Sometimes there's a few gems you don't recognise. Rather than having to Google each one, bundle_info will show a summary of all the gems.
 
+Works with `Gemfile` or `.gemspec`
+
 ## Installation
 
     $ gem install bundle_info
