@@ -5,10 +5,8 @@ require 'active_support/core_ext/string'
 
 module BundleInfo
   class CommandLine
-  	def self.invoke(args)
-      if args.any?
-        target = args.first
-      elsif Dir.glob('*.gemspec').any?
+    def self.invoke(args)
+      if Dir.glob('*.gemspec').any?
         gemspec_path = Dir.glob('*.gemspec').first
         gemspec = File.open(gemspec_path).read
         gems = Gemnasium::Parser::Gemspec.new(gemspec)
@@ -16,10 +14,9 @@ module BundleInfo
         gemfile = File.open('Gemfile').read
         gems = Gemnasium::Parser::Gemfile.new(gemfile)
       else
-        puts "No Gemfile or gemspec found in current directory"
+        puts "No Gemfile or .gemspec found in current directory"
         exit
       end
-
       gems.dependencies.map do |dep|
         info = Gems.info dep.name
         puts "#{dep.name}: #{info['info'].truncate(80)}"
