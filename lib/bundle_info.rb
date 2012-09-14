@@ -1,9 +1,9 @@
-require_relative "bundler_info/version"
+require_relative "bundle_info/version"
 require 'gemnasium/parser'
 require 'gems'
 require 'active_support/core_ext/string'
 
-module BundlerInfo
+module BundleInfo
   class CommandLine
   	def self.invoke(args)
       if args.any?

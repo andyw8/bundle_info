@@ -2,6 +2,6 @@
 
 #$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 
-require_relative '../lib/bundler_info'
+require_relative '../lib/bundle_info'
 
-BundlerInfo::CommandLine.invoke(ARGV)
+BundleInfo::CommandLine.invoke(ARGV)
