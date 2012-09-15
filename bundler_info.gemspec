@@ -18,6 +18,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency "gemnasium-parser"
   gem.add_dependency "gems"
   gem.add_dependency "activesupport"
+  gem.add_dependency "colored"
   gem.add_development_dependency "rspec"
   gem.add_development_dependency "vcr"
   gem.add_development_dependency "webmock"

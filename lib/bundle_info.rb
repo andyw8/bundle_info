@@ -2,6 +2,7 @@ require "bundle_info/version"
 require 'gemnasium/parser'
 require 'gems'
 require 'active_support/core_ext/string'
+require 'colored'
 
 module BundleInfo
   class CommandLine
@@ -20,7 +21,7 @@ module BundleInfo
       gems.dependencies.map do |dep|
         info = Gems.info dep.name
         desc = info['info'].gsub(/\n/, '')
-        puts "#{dep.name}: #{desc.truncate(80)}"
+        puts "#{dep.name}:".green + " #{desc.truncate(80)}"
       end
     end
   end
