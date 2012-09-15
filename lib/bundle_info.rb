@@ -19,7 +19,8 @@ module BundleInfo
       end
       gems.dependencies.map do |dep|
         info = Gems.info dep.name
-        puts "#{dep.name}: #{info['info'].truncate(80)}"
+        desc = info['info'].gsub(/\n/, '')
+        puts "#{dep.name}: #{desc.truncate(80)}"
       end
     end
   end
