@@ -21,11 +21,9 @@ module BundleInfo
       gems.dependencies.map do |dep|
         info = Gems.info dep.name
         output = "#{dep.name}:".green
-        if info
+        if info && info['info']
           desc = info['info'].gsub(/\n/, ' ')
           output += " #{desc.truncate(80)}"
-        else
-          output += " Not found on rubygems.org"
         end
         puts output
       end
