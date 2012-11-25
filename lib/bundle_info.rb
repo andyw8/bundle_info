@@ -22,7 +22,7 @@ module BundleInfo
         info = Gems.info dep.name
         output = "#{dep.name}:".green
         if info
-          desc = info['info'].gsub(/\n/, '')
+          desc = info['info'].gsub(/\n/, ' ')
           output += " #{desc.truncate(80)}"
         else
           output += " Not found on rubygems.org"
